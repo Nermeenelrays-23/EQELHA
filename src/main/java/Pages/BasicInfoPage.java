@@ -31,7 +31,7 @@ public class BasicInfoPage extends PageBase {
         ClickButton(PolicyEffectiveDate);
         ClickButton(CheckBoxAgreement);
         ClickButton(ContinueBtn);
-        Thread.sleep(14000);
+        Thread.sleep(10000);
         Thread.sleep(12000);
 
     }

@@ -2,7 +2,9 @@ package Tests;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
@@ -23,13 +25,14 @@ public class TestBase extends AbstractTestNGCucumberTests
             driver = new ChromeDriver();
 
         }
-        else if (browserName.equalsIgnoreCase("chrome-headless"))
+        else if (browserName.equalsIgnoreCase("Headless"))
         {
-            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+ "/Drivers/chromedriver.exe");
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--headless");
-            options.addArguments("--window-size=1920,1800");
-            driver = new ChromeDriver(options);
+            DesiredCapabilities caps = new DesiredCapabilities();
+            caps.setJavascriptEnabled(true);
+            caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,System.getProperty("user.dir")+"/Drivers/phantomjs.exe");
+            String[] phantomJsArgs={"--web-security=no","--ignore-ssl-errors=yes"};
+            caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS,phantomJsArgs);
+            driver=new PhantomJSDriver(caps);
         }
 
         driver.manage().window().maximize();

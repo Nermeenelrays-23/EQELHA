@@ -18,12 +18,13 @@ public class GetQuotesForUser {
     VehicleInfoPage VehicleInfoObj;
     GetQuotesPage GetQuoteObj;
     PolicyDetailsPage PolicyDetailsObj;
+    PurchaseUsingCC PurchaseObj;
     @Given("The User Login From HomePage")
     public void the_User_Login_From_HomePage() throws InterruptedException {
         HomePageObj=new Homepage(driver);
         HomePageObj.Login();
         LoginObj=new LoginPage(driver);
-        LoginObj.Login("doaa.mostafa@devexy.com","Doaa@123456");
+        LoginObj.Login("nermeen.elrays@devexy.com","Yasmeen42014118!");
 
     }
     @And("User Click on Get Quotes From HomePage")
@@ -34,7 +35,7 @@ public class GetQuotesForUser {
     @And("User enter His Basic info")
     public void user_enter_His_Basic_info() throws InterruptedException {
         BasicInfoObj=new BasicInfoPage(driver);
-        BasicInfoObj.BasicInfo("1083600922","05","1414","259313700");
+        BasicInfoObj.BasicInfo("1078833165","06","1410","756252800");
     }
     @And("User enter His User info")
     public void user_enter_His_User_info() {
@@ -63,7 +64,7 @@ public class GetQuotesForUser {
     }
     @Then("User can purchase it successfully")
     public void user_can_purchase_it_successfully() throws InterruptedException {
-        PolicyDetailsObj=new PolicyDetailsPage(driver);
-        PolicyDetailsObj.UserCanPurchaseUCA();
+        PurchaseObj=new PurchaseUsingCC(driver);
+        PurchaseObj.UserPurchaseUsingEsal();
     }
 }

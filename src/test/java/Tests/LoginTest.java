@@ -11,7 +11,7 @@ public class LoginTest extends TestBase {
         public void UserCanLogin() throws InterruptedException {
 
             LoginObj=new LoginPage(driver);
-            LoginObj.Login("doaa.mostafa@devexy.com","Doaa@123456");
+            LoginObj.Login("nermeen.elrays@devexy.com","Yasmeen42014118!");
 
         }
 }

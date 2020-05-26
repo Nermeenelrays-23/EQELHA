@@ -1,6 +1,4 @@
 package Runner;
-
-
 import Tests.TestBase;
 import io.cucumber.testng.CucumberOptions;
 

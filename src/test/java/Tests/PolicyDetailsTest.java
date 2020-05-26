@@ -18,6 +18,6 @@ public class PolicyDetailsTest extends TestBase {
         PolicyObj.uploadImage3();
         PolicyObj.uploadImage4();
         PolicyObj.uploadImage5();
-        PolicyObj.UserCanPurchaseUCA();
+
     }
 }
