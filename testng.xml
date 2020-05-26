@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression Suite">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="Chrome-headless"/>
     <test name="Regression Suite" preserve-order="false">
         <classes>
             <class name="Tests.HomePageTest"/>
@@ -10,6 +10,7 @@
             <class name="Tests.VehicleInfoTest"/>
             <class name="Tests.GetQuotesTest"/>
             <class name="Tests.PolicyDetailsTest"/>
+            <class name="Tests.CreditCardTest"></class>
         </classes>
     </test>
 </suite>
