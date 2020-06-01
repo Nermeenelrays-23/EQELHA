@@ -18,16 +18,14 @@ public class GetQuotesPage extends PageBase{
    @FindBy(xpath = "/html/body/app-root/app-base/div/app-quotes-list/section/div/div[3]/div[2]/div[2]/div[2]/div/div[2]/mat-checkbox[3]/label/div\n")
     WebElement Additional3;
 
-
     @FindBy(xpath = "/html/body/app-root/app-base/div/app-quotes-list/section/div/div[3]/div[2]/div[3]/div[3]/button\n")
     WebElement BuyNowBtn;
 
     public void UserSelectWalaaComp() throws InterruptedException {
-        ScrollDown();
+
+
         Thread.sleep(1000);
-        ScrollDown();
-        Thread.sleep(1000);
-        ScrollDown();
+
         ClickButton(Additional1);
         Thread.sleep(1000);
         ClickButton(Additional2);
