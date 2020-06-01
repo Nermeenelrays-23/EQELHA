@@ -18,6 +18,7 @@ public class GetQuotesForUser {
     VehicleInfoPage VehicleInfoObj;
     GetQuotesPage GetQuoteObj;
     PolicyDetailsPage PolicyDetailsObj;
+    UserCanPurchase UserPurchaseObj;
     @Given("The User Login From HomePage")
     public void the_User_Login_From_HomePage() throws InterruptedException {
         HomePageObj=new Homepage(driver);
@@ -34,7 +35,7 @@ public class GetQuotesForUser {
     @And("User enter His Basic info")
     public void user_enter_His_Basic_info() throws InterruptedException {
         BasicInfoObj=new BasicInfoPage(driver);
-        BasicInfoObj.BasicInfo("1083600922","05","1414","259313700");
+        BasicInfoObj.BasicInfo("1009512268","07","1380","255153800");
     }
     @And("User enter His User info")
     public void user_enter_His_User_info() {
@@ -49,7 +50,7 @@ public class GetQuotesForUser {
     @When("User Click on Get Quotes")
     public void user_Click_on_Get_Quotes() throws InterruptedException {
        GetQuoteObj=new GetQuotesPage(driver);
-       GetQuoteObj.UserSelectUCAComp();
+       GetQuoteObj.UserSelectWalaaComp();
     }
     @And("Select Insurance company to Purchase")
     public void select_Insurance_company_to_Purchase() throws InterruptedException, AWTException {
@@ -63,7 +64,8 @@ public class GetQuotesForUser {
     }
     @Then("User can purchase it successfully")
     public void user_can_purchase_it_successfully() throws InterruptedException {
-        PolicyDetailsObj=new PolicyDetailsPage(driver);
-        PolicyDetailsObj.UserCanPurchaseUCA();
+       UserPurchaseObj=new UserCanPurchase(driver);
+       UserPurchaseObj.UserCanPurchaseWalaa();
+
     }
 }

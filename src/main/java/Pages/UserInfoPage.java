@@ -8,7 +8,7 @@ public class UserInfoPage extends PageBase {
     public UserInfoPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "/html/body/app-root/app-base/app-get-quote/section/div/div/div[2]/app-user-info/form/button[2]\n")
+    @FindBy(xpath = "//section[@id='get-quote']//app-user-info[@class='ng-star-inserted']/form/button[@type='submit']")
     WebElement continuebtn;
     public void UserInfo(){
 

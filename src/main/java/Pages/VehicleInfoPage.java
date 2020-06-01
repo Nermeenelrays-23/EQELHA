@@ -8,7 +8,7 @@ public class VehicleInfoPage extends PageBase {
     public VehicleInfoPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(id="mat-input-5")
+    @FindBy(xpath="//section[@id='get-quote']/div[@class='container py-5']/div//app-vehicle-info[@class='ng-star-inserted']/form/div[1]/mat-form-field[2]//input")
     WebElement VehicleValue;
     @FindBy(xpath = "//section[@id='get-quote']/div[@class='container py-5']//app-vehicle-info[@class='ng-star-inserted']/form//button[@type='submit']")
     WebElement ContinueBtn;

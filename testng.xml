@@ -10,6 +10,7 @@
             <class name="Tests.VehicleInfoTest"/>
             <class name="Tests.GetQuotesTest"/>
             <class name="Tests.PolicyDetailsTest"/>
+            <class name="Tests.UserCanPurchaseTest"/>
         </classes>
     </test>
 </suite>

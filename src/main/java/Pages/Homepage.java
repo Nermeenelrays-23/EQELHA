@@ -13,7 +13,7 @@ public class Homepage extends PageBase {
     @FindBy(xpath = "/html/body/app-root/app-signup/section/div[1]/div/a\n")
     WebElement LoginBtn;
     //احصل عل العروَض
-    @FindBy(xpath = "/html/body/app-root/app-base/app-home/app-home-main-section/section/div/div/form/div[2]/button\n")
+    @FindBy(xpath = "/html/body/app-root/app-base/div/app-home/app-home-main-section/section/div/div/form/div[2]/button\n")
     WebElement GetQuotesBtn;
     public void Login() throws InterruptedException {
         ClickButton(RegisterBtn);

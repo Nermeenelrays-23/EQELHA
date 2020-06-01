@@ -11,6 +11,6 @@ public class GetQuotesTest extends TestBase
     public void UserBuyUCAComp() throws InterruptedException {
 
         GetQuotesObj=new GetQuotesPage(driver);
-        GetQuotesObj.UserSelectUCAComp();
+        GetQuotesObj.UserSelectWalaaComp();
     }
 }
