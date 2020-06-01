@@ -11,6 +11,6 @@ public class BasicInfoTest extends TestBase {
     public void FirstScreen() throws InterruptedException {
 
         BasicInfoObj=new BasicInfoPage(driver);
-        BasicInfoObj.BasicInfo("1009512268","07","1380","255153800");
+        BasicInfoObj.BasicInfo("2153337650","09","1980","478595410");
     }
 }

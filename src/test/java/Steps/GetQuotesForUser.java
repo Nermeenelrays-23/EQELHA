@@ -35,7 +35,7 @@ public class GetQuotesForUser {
     @And("User enter His Basic info")
     public void user_enter_His_Basic_info() throws InterruptedException {
         BasicInfoObj=new BasicInfoPage(driver);
-        BasicInfoObj.BasicInfo("1009512268","07","1380","255153800");
+        BasicInfoObj.BasicInfo("2153337650","09","1980","478595410");
     }
     @And("User enter His User info")
     public void user_enter_His_User_info() {
