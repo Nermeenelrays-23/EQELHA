@@ -22,10 +22,10 @@ public class GetQuotesPage extends PageBase{
     WebElement BuyNowBtn;
 
     public void UserSelectWalaaComp() throws InterruptedException {
-
-
+        ScrollDown();
         Thread.sleep(1000);
-
+        ScrollDown();
+        Thread.sleep(1000);
         ClickButton(Additional1);
         Thread.sleep(1000);
         ClickButton(Additional2);

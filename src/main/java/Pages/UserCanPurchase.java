@@ -37,6 +37,8 @@ public class UserCanPurchase extends PageBase {
         ScrollDown();
         Thread.sleep(1000);
         ScrollDown();
+        Thread.sleep(1000);
+        ScrollDown();
         ClickButton(DoneBtn);
     }
 }

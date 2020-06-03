@@ -57,7 +57,7 @@ public class PolicyDetailsPage extends PageBase {
 
     }
     public void UploadValidPhotoImage1() throws AWTException, InterruptedException {
-        String imageName1="again.PNG";
+        String imageName1="Test.PNG";
         String imagePath1=System.getProperty("user.dir")+"\\Uploads\\"+imageName1;
         Thread.sleep(1000);
         ClickButton(Image1);
@@ -79,7 +79,7 @@ public class PolicyDetailsPage extends PageBase {
         robot.keyRelease(KeyEvent.VK_ENTER);
     }
     public void uploadImage2() throws InterruptedException, AWTException {
-        String imageName2="again.PNG";
+        String imageName2="Test.PNG";
         String imagePath2=System.getProperty("user.dir")+"\\Uploads\\"+imageName2;
         Thread.sleep(1000);
         ClickButton(Image2);
@@ -102,7 +102,7 @@ public class PolicyDetailsPage extends PageBase {
         robot.delay(2000);
     }
     public void uploadImage3() throws InterruptedException, AWTException {
-        String imageName3="again.PNG";
+        String imageName3="Test.PNG";
         String imagePath3=System.getProperty("user.dir")+"\\Uploads\\"+imageName3;
         Thread.sleep(1000);
         ClickButton(Image3);
@@ -126,7 +126,7 @@ public class PolicyDetailsPage extends PageBase {
     }
 
     public void uploadImage4() throws InterruptedException, AWTException {
-        String imageName4="again.PNG";
+        String imageName4="Test.PNG";
         String imagePath4=System.getProperty("user.dir")+"\\Uploads\\"+imageName4;
         Thread.sleep(1000);
         ClickButton(Image4);
@@ -149,7 +149,7 @@ public class PolicyDetailsPage extends PageBase {
         robot.delay(2000);
     }
     public void uploadImage5() throws InterruptedException, AWTException {
-        String imageName5="again.PNG";
+        String imageName5="Test.PNG";
         String imagePath5=System.getProperty("user.dir")+"\\Uploads\\"+imageName5;
         Thread.sleep(1000);
         ClickButton(Image5);
